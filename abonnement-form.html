@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b9822eb3f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/abonnement.css">
+    <title>Abonnement Form</title>
+    <link rel="icon" href="i.png">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul class="menu-items">
+                    <li><a href="index.html"><img src="images/logo.png" alt="brand logo"></a>
+                    </li>
+                    <li><a href="index.html">Nyheder</a></li>
+                    <li><a href="politik.html">Politik</a></li>
+                    <li><a href="debat.html">Debat</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="kultur.html">Kultur</a></li>
+                    <li><a href="begivenheder.html">Begivenheder</a></li>
+                    <li><a class="active" href="abonnement.html">Abonnement</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <h1>Prøv iKøbenhavn gratis i 3 måneder</h1>
+
+
+            <div class="form-centering">
+
+                <form>
+
+                    <label for="email">Indtast din email <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="confirm-email">Bekræft din email <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="email" id="confirm-email" name="confirm-email" required>
+
+                    <label for="password">Vælg adgangsskode <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Bekræft koden <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+
+                    <label for="fname">Fornavn <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Efternavn <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="text" id="lname" name="lname" required>
+
+
+                    <label for="phoneNumber">Telefon <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+
+
+                    <label for="address">Addresse <i class="fa-solid fa-asterisk"></i></label>
+                    <input type="text" id="address" name="address" required>
+
+
+
+                    <div class="checkbox">
+
+                        <div class="flex">
+                            <input type="checkbox" id="news" name="news" required>
+                            <label for="news">Jeg vil gerne modtage dagens vigtigste nyheder som udsendes hver
+                                morgen på mail
+                            </label><br>
+                        </div>
+
+                        <div class="flex">
+                            <input type="checkbox" id="offer" name="offer" required>
+                            <label class="checkbox-align" for="offer">Jeg vil gerne modtage relevante tilbud samt info
+                                om
+                                begivenheder,
+                                debatter m.m.
+                            </label><br>
+                        </div>
+
+                        <div class="flex">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label class="checkbox-align" for="terms">Jeg accepterer Dagbladet Informations
+                                produktvilkår</label>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="form-details">
+                    <section>
+
+                        <h3>Digital og weekend</h3>
+
+                        <p>Abonnementet giver ubegrænset adgang til den digitale avis, samt papiravisen tilsendt fredag
+                            og
+                            lørdag. Abonnementet er fortløbende og fortsætter efter den første måned til normalpris.
+                        </p>
+
+                        <table>
+                            <tr>
+                                <td>Normalpris</td>
+                                <td>315,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rabat</td>
+                                <td>315,00</td>
+                            </tr>
+                            <tr>
+                                <td>Pris i alt</td>
+                                <td>0,00</td>
+                            </tr>
+                        </table>
+
+                        <p>Tilbuddet gælder kun for husstande i Danmark, der ikke har abonneret inden for de sidste 12
+                            måneder.
+                        </p>
+
+
+                    </section>
+
+                    <button class="abonnement-button" type=button
+                        onClick="location.href='abonnement-slut.html'">Bestil</button>
+                </div>
+
+            </div>
+
+
+
+            <section class="studerende">
+                <div class="studerende-accept">
+                    <h5>Har du spørgsmål angående abonnement?</h5>
+                    <button class="studerende-button">Skriv til os</button>
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+
+
+        <footer>
+            <p>iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 | ikøbenhavn@mail.dk</p>
+            <p>Åbningstider: Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag: 10.00-14.00 | Torsdag: 10.00-14.00 |
+                Fredag, lørdag, søndag: Lukket
+            </p>
+            <p>"Dette er en skoleopgave lavet på Next Uddannelse København/Medie"</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

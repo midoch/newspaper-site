@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    /* svarer til 1em */
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    margin-bottom: 1em;
+    /* kan også være padding-bottom */
+}
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* flex egenskaber */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* osv. */

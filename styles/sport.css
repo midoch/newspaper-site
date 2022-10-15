@@ -1,0 +1,157 @@
+@import url(reset.css);
+@import url(main.css);
+
+
+main .main-section {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -5em;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+
+main {
+    padding: 0;
+}
+
+.main-content p,
+h2 {
+    text-align: center;
+}
+
+.main-content {
+    max-width: 740px;
+}
+
+.first-section,
+.second-section,
+.third-section {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+.main-content h1 {
+    padding-bottom: 30px;
+}
+
+.main-content h3 {
+    padding-bottom: 75px;
+}
+
+
+.main-content p {
+    color: #E30613;
+    font-size: 18px;
+}
+
+.main-content h3 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.second-section {
+    font-weight: bold;
+}
+
+p.written-by {
+    font-size: 12px;
+}
+
+p.date {
+    color: #66665F;
+    font-size: 12px;
+    padding-bottom: 2em;
+}
+
+
+.third-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/* Gallery */
+
+.gallery-grid,
+.slider-grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.gallery-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em 0 3.5em;
+}
+
+.slider-grid {
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(1, auto);
+}
+
+.slider {
+    width: 640px;
+    grid-area: 1/1/2/-1;
+    overflow: hidden;
+    order: 1;
+}
+
+.slide {
+    display: none;
+}
+
+.slide--active {
+    display: block;
+    order: 2;
+}
+
+.caption {
+    font-size: 0.625em;
+    line-height: 1.6;
+    align-self: flex-end;
+    width: 14.3em;
+    grid-column: 3/4;
+    color: #66665F;
+}
+
+.map-caption {
+    font-size: 0.625em;
+    line-height: 1.6;
+    align-self: flex-end;
+    width: 14.3em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    color: #66665F;
+}
+
+#next,
+#back {
+    grid-area: 1/1/2/-1;
+    font-size: 2.5em;
+    margin: 0.5em;
+    cursor: pointer;
+    color: #FFF;
+    order: 3;
+}
+
+
+#next {
+    justify-self: flex-end;
+}
+
+#back {
+    justify-self: flex-start;
+}
+
+
+/* Gallery END */

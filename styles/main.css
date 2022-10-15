@@ -1,0 +1,382 @@
+@import url(reset.css);
+@import url(main.css);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+body {
+    color: black;
+}
+
+main {
+    padding: 6em 0 3.5em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Menu  */
+
+#burger {
+    display: none;
+    justify-content: start;
+    cursor: pointer;
+    color: #e5e5e5;
+    font-size: 1em;
+
+}
+
+
+
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Nav bar */
+
+nav {
+    background-color: #EEEEEE;
+    position: fixed;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 100;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* links END */
+
+.menu-items li:nth-child(1) {
+    padding-left: 0;
+}
+
+.menu-items li:nth-child(2) {
+    padding-left: 50px;
+}
+
+
+.menu-items li:last-child {
+    margin-left: auto;
+}
+
+.menu-items li {
+    padding-left: 30px;
+    min-width: 5em;
+}
+
+.menu-items li img {
+    width: 150px;
+
+}
+
+.menu-items {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.menu-items a:hover,
+.active {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Nav bar END */
+
+
+
+
+/* Menu  */
+
+#burger {
+    display: none;
+    justify-content: start;
+    cursor: pointer;
+    color: #e5e5e5;
+    font-size: 1em;
+
+}
+
+
+
+/* Font Style */
+
+h2 {
+    font-weight: 700;
+    font-size: 44px;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 24;
+}
+
+/* Font Style END*/
+
+
+/* Content */
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.row figure {
+    max-width: 225px;
+}
+
+.row,
+.left-section,
+.lower-section,
+.flex {
+    max-width: 960px;
+    margin: 0 auto;
+    /* padding-bottom: 2em;
+    padding-top: 5.56em; */
+    /* padding: 5.5625em 20px; */
+}
+
+.left-section,
+.lower-section,
+.flex {
+    padding-top: 0;
+}
+
+
+.row figure figcaption {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    padding-top: 1em;
+}
+
+aside .aside-h2 {
+    color: #E30613;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+aside ul li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+.left-section {
+    max-width: 640px;
+}
+
+.left-section img {
+    padding: 0 26px 19px 0;
+}
+
+.flex aside hr {
+    color: black;
+    background-color: black;
+}
+
+/* Content END */
+
+
+
+
+/* Media Screen IPAD */
+
+@media (max-width: 768px) {
+
+    #wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    nav,
+    .menu-items li {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .menu-items li img {
+        width: 100px;
+    }
+
+
+    .menu-items li:nth-child(2) {
+        padding-left: 0;
+    }
+
+    .menu-items li {
+        padding-left: 0;
+        min-width: 0;
+    }
+
+    .row {
+        gap: 1em;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+}
+
+/* Media Screen IPAD END */
+
+
+
+
+/* Media Screen IPHONE */
+
+@media (max-width: 420px) {
+
+    #wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: none;
+    }
+
+    .menu-items li img {
+        width: 200px;
+    }
+
+
+
+    .left-section img {
+        max-width: 324px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    aside .aside-h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    footer {
+        max-width: 320px;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0 auto;
+    }
+
+
+
+    /* burger menu*/
+
+    #burger {
+        display: flex;
+        padding: 0.5em;
+        order: 2;
+    }
+
+    /* styling når burger har class active */
+    #burger.active {
+        padding-top: 4em;
+        font-size: 1.5em;
+    }
+
+    /* ændring af nav til tablet- og mobilvisning */
+
+
+
+    /* styling når nav har class active */
+    nav.active {
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #EEEEEE;
+    }
+
+    /* menu med links til intern navigation */
+    .menu-items {
+        display: none;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .menu-items li {
+        margin: 1.5em 0;
+        justify-self: center;
+    }
+
+
+
+    ul.menu-items a {
+        margin: 0;
+    }
+
+    .menu-items a:hover,
+    .active {
+        font-weight: 100
+    }
+
+    .fa-2x {
+        font-size: 2em;
+        color: black;
+    }
+
+    #burger.active {
+        padding-top: 15em;
+        font-size: 1.5em;
+    }
+
+    .menu-items li:last-child {
+        margin-left: 0;
+    }
+
+
+    .menu-items a {
+        font-size: 25px;
+    }
+
+
+
+}
+
+/* Media Screen IPHONE END */
