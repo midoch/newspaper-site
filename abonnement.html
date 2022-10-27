@@ -8,8 +8,10 @@
     <script src="https://kit.fontawesome.com/9b9822eb3f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/abonnement.css">
     <title>Abonnement</title>
-    <link rel="icon" href="i.png">
-    <script defer src="burger-menu.js"></script>
+    <link rel="icon" href="images/favicon.png">
+    <script defer src="scripts/burger-menu.js"></script>
+    <script defer src="scripts/subscription.js"></script>
+
 </head>
 
 <body>
@@ -47,14 +49,15 @@
                         <li><i class="fa-solid fa-check"></i> Fuld adgang til ikoebenhavn.dk</li>
                         <li><i class="fa-solid fa-check"></i> Nul reklamer på ikoebenhavn.dk</li>
                         <li><i class="fa-solid fa-check"></i> E-avis mandag til lørdag</li>
-                        <li><i class="fa-solid fa-check"></i> Abonnementsfordele</li>
+                        <li class="last"><i class="fa-solid fa-check"></i> Abonnementsfordele</li>
                     </ul>
 
                     <h4>0,-</h4>
 
                     <p class="abonnement">Første måned/herefter 210,-/md.</p>
-                    <button class="abonnement-button" type=button onClick="location.href='abonnement-form.html'">Prøv
-                        nu</button>
+
+                    <a class="abonnement-button" id="abonnement-1" href="abonnement-form.html">Prøv
+                        nu</a>
                 </div>
 
 
@@ -74,8 +77,8 @@
                     <h4>0,-</h4>
 
                     <p class="abonnement">Første måned/herefter 315,-/md.</p>
-                    <button class="abonnement-button" type=button onClick="location.href='abonnement-form.html'">Prøv
-                        nu</button>
+                    <a class="abonnement-button" id="abonnement-2" href="abonnement-form.html">Prøv
+                        nu</a>
                 </div>
 
 
@@ -94,11 +97,11 @@
 
                     <h4>0,-</h4>
 
-                    <p class="abonnement">Første måned/herefter 210,-/md.</p>
+                    <p class="abonnement">Første måned/herefter 440,-/md.</p>
 
 
-                    <button class="abonnement-button" type=button onClick="location.href='abonnement-form.html'">Prøv
-                        nu</button>
+                    <a class="abonnement-button" id="abonnement-3" href="abonnement-form.html">Prøv
+                        nu</a>
 
                 </div>
 
@@ -107,7 +110,9 @@
             <section class="studerende">
                 <div class="studerende-accept">
                     <h5>Er du studerende? Så har vi også et godt tilbud til dig.</h5>
-                    <button class="studerende-button">Jeg er studerende</button>
+
+                    <a class="studerende-button" id="abonnement-4" href="abonnement-form.html">Jeg er studerende</a>
+
                 </div>
             </section>
 

@@ -9,21 +9,13 @@
 
 body {
     color: black;
+    font-family: 'inter', sans-serif;
 }
 
 main {
     padding: 6em 0 3.5em;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-    font-family: 'Inter', sans-serif;
-}
 
 
 /* Menu  */
@@ -138,11 +130,6 @@ h2 {
     font-family: 'Inter', sans-serif;
 }
 
-p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 24;
-}
-
 /* Font Style END*/
 
 
@@ -161,7 +148,6 @@ p {
 }
 
 .row,
-.left-section,
 .lower-section,
 .flex {
     max-width: 960px;
@@ -169,6 +155,14 @@ p {
     /* padding-bottom: 2em;
     padding-top: 5.56em; */
     /* padding: 5.5625em 20px; */
+}
+
+.left-section {
+    max-width: 640px;
+}
+
+aside {
+    max-width: 295px;
 }
 
 .left-section,
@@ -184,7 +178,7 @@ p {
     padding-top: 1em;
 }
 
-aside .aside-h2 {
+aside .aside-h3 {
     color: #E30613;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
@@ -193,16 +187,23 @@ aside .aside-h2 {
 
 aside ul li {
     list-style: none;
-    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+aside a {
+    font-size: 22px;
 }
 
 .left-section {
     max-width: 640px;
-}
-
-.left-section img {
     padding: 0 26px 19px 0;
 }
+
+.left-section p {
+    font-size: 24px;
+    max-width: 640px;
+}
+
 
 .flex aside hr {
     color: black;
@@ -247,10 +248,6 @@ aside ul li {
         gap: 1em;
     }
 
-    h2 {
-        font-size: 25px;
-    }
-
 }
 
 /* Media Screen IPAD END */
@@ -262,48 +259,20 @@ aside ul li {
 
 @media (max-width: 420px) {
 
-    #wrapper {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
     .row {
         display: none;
     }
 
+    .left-section {
+        padding: 0;
+    }
+
+    /* burger menu*/
+
+    /* ikøbenhavn Logo */
     .menu-items li img {
         width: 200px;
     }
-
-
-
-    .left-section img {
-        max-width: 324px;
-    }
-
-    h2 {
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    aside .aside-h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    footer {
-        max-width: 320px;
-        padding-left: 1em;
-        padding-right: 1em;
-        margin: 0 auto;
-    }
-
-
-
-    /* burger menu*/
 
     #burger {
         display: flex;
@@ -311,33 +280,24 @@ aside ul li {
         order: 2;
     }
 
-    /* styling når burger har class active */
-    #burger.active {
-        padding-top: 4em;
-        font-size: 1.5em;
-    }
 
     /* ændring af nav til tablet- og mobilvisning */
-
-
-
-    /* styling når nav har class active */
-    nav.active {
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
+    nav {
+        padding: 0;
+        line-height: 2em;
+        flex-direction: row-reverse;
         background-color: #EEEEEE;
     }
 
     /* menu med links til intern navigation */
     .menu-items {
         display: none;
-        padding: 0;
+        padding: 3em 0 0 0;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         order: 1;
+        width: 100vw;
+        height: 100vh;
     }
 
     .menu-items li {
@@ -345,25 +305,18 @@ aside ul li {
         justify-self: center;
     }
 
-
-
     ul.menu-items a {
         margin: 0;
     }
 
     .menu-items a:hover,
     .active {
-        font-weight: 100
+        font: weight 400px;
     }
 
     .fa-2x {
         font-size: 2em;
         color: black;
-    }
-
-    #burger.active {
-        padding-top: 15em;
-        font-size: 1.5em;
     }
 
     .menu-items li:last-child {
@@ -375,7 +328,34 @@ aside ul li {
         font-size: 25px;
     }
 
+    /* forside */
 
+    .left-section,
+    .lower-section,
+    .flex {
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .left-section h2 {
+        font-size: 2em;
+    }
+
+    .left-section p {
+        font-size: 1em;
+    }
+
+    .lower-section h2 {
+        font-size: 2em;
+    }
+
+    .lower-section p {
+        font-size: 1em;
+    }
+
+    aside ul li {
+        font-size: 18px;
+    }
 
 }
 

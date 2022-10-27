@@ -65,6 +65,9 @@ p.date {
     padding-bottom: 2em;
 }
 
+p {
+    font-weight: 100;
+}
 
 .third-content h3 {
     font-size: 20px;
@@ -155,3 +158,39 @@ h3 {
 
 
 /* Gallery END */
+
+
+
+
+
+
+
+/* Media Screen IPHONE */
+
+@media (max-width: 420px) {
+
+    .slider {
+        width: 370px;
+    }
+
+    .caption {
+        display: none;
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: repeat(1, auto);
+        padding: 2em 0 3.5em;
+    }
+
+    .slider-grid {
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    iframe {
+        width: 370px;
+        height: 280px;
+    }
+
+}

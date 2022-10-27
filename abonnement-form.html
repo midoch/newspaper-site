@@ -8,13 +8,17 @@
     <script src="https://kit.fontawesome.com/9b9822eb3f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/abonnement.css">
     <title>Abonnement Form</title>
-    <link rel="icon" href="i.png">
+    <link rel="icon" href="images/favicon.png">
+    <script defer src="scripts/burger-menu.js"></script>
+    <script defer src="scripts/validering.js"></script>
+    <script defer src="scripts/abonnement-result.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <nav>
+                <div id="burger"><i class="fa-solid fa-bars fa-2x"></i></div>
                 <ul class="menu-items">
                     <li><a href="index.html"><img src="images/logo.png" alt="brand logo"></a>
                     </li>
@@ -37,19 +41,19 @@
 
             <div class="form-centering">
 
-                <form>
+                <form id="form-tilmelding" action="abonnement-slut.html" method="post">
 
                     <label for="email">Indtast din email <i class="fa-solid fa-asterisk"></i></label>
                     <input type="email" id="email" name="email" required>
 
                     <label for="confirm-email">Bekræft din email <i class="fa-solid fa-asterisk"></i></label>
-                    <input type="email" id="confirm-email" name="confirm-email" required>
+                    <input type="email" id="confirm-email" name="confirm_email" required>
 
                     <label for="password">Vælg adgangsskode <i class="fa-solid fa-asterisk"></i></label>
                     <input type="password" id="password" name="password" required>
 
                     <label for="confirm-password">Bekræft koden <i class="fa-solid fa-asterisk"></i></label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="password" id="confirm-password" name="confirm_password" required>
 
 
                     <label for="fname">Fornavn <i class="fa-solid fa-asterisk"></i></label>
@@ -72,14 +76,14 @@
                     <div class="checkbox">
 
                         <div class="flex">
-                            <input type="checkbox" id="news" name="news" required>
+                            <input type="checkbox" id="news" name="news">
                             <label for="news">Jeg vil gerne modtage dagens vigtigste nyheder som udsendes hver
                                 morgen på mail
                             </label><br>
                         </div>
 
                         <div class="flex">
-                            <input type="checkbox" id="offer" name="offer" required>
+                            <input type="checkbox" id="offer" name="offer">
                             <label class="checkbox-align" for="offer">Jeg vil gerne modtage relevante tilbud samt info
                                 om
                                 begivenheder,
@@ -93,31 +97,29 @@
                                 produktvilkår</label>
                         </div>
                     </div>
-
+                    <p id="besked"></p>
                 </form>
 
                 <div class="form-details">
                     <section>
 
-                        <h3>Digital og weekend</h3>
+                        <h3 id="heading"></h3>
 
-                        <p>Abonnementet giver ubegrænset adgang til den digitale avis, samt papiravisen tilsendt fredag
-                            og
-                            lørdag. Abonnementet er fortløbende og fortsætter efter den første måned til normalpris.
+                        <p id="tekst">
                         </p>
 
                         <table>
                             <tr>
                                 <td>Normalpris</td>
-                                <td>315,00</td>
+                                <td id="pris"></td>
                             </tr>
                             <tr>
                                 <td>Rabat</td>
-                                <td>315,00</td>
+                                <td id="rabat"></td>
                             </tr>
                             <tr>
                                 <td>Pris i alt</td>
-                                <td>0,00</td>
+                                <td id="total"></td>
                             </tr>
                         </table>
 
@@ -128,8 +130,7 @@
 
                     </section>
 
-                    <button class="abonnement-button" type=button
-                        onClick="location.href='abonnement-slut.html'">Bestil</button>
+                    <button form="form-tilmelding" class="abonnement-button right" type="submit">Bestil</button>
                 </div>
 
             </div>
