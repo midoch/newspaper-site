@@ -1,5 +1,4 @@
 @import url(reset.css);
-@import url(main.css);
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -18,26 +17,11 @@ main {
 
 
 
-/* Menu  */
-
-#burger {
-    display: none;
-    justify-content: start;
-    cursor: pointer;
-    color: #e5e5e5;
-    font-size: 1em;
-
-}
 
 
 
 
-footer {
-    color: white;
-    background-color: black;
-    text-align: center;
-    padding: 10px;
-}
+
 
 
 /* Nav bar */
@@ -212,12 +196,21 @@ aside a {
 
 /* Content END */
 
-
-
+/* footer */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
 
 /* Media Screen IPAD */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
+
+
+
+
 
     #wrapper {
         max-width: 700px;
@@ -258,6 +251,11 @@ aside a {
 /* Media Screen IPHONE */
 
 @media (max-width: 420px) {
+
+    main {
+        padding: 0 1em;
+    }
+
 
     .row {
         display: none;
