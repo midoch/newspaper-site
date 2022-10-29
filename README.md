@@ -23,3 +23,7 @@ https://www.figma.com/file/BMEzd4cz6KX015p5T2PIpB/Webavisen---iK%C3%B8benhavn-20
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JS](https://developer.mozilla.org/en-US/docs/Web/JS)
+
+## Hosted on Netlify
+
+https://mido-newspaper-site.netlify.app
